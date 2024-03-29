@@ -19,7 +19,6 @@ const Accordian = () => {
       cpyMultiple.splice(findIndexOfCurrentId, 1);
     }
     setMultiple(cpyMultiple);
-    console.log(findIndexOfCurrentId, "ajh");
   }
   console.log(select, multiple);
 
@@ -34,7 +33,7 @@ const Accordian = () => {
       <div className="w-[500px]">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
-            <div key={dataItem.id} className="bg-gray-500 m-10 p-6 ">
+            <div key={dataItem.id} className="bg-gray-500 m-10 p-6 rounded-lg">
               <div
                 className="text-black gap-6 flex cursor-pointer"
                 onClick={
@@ -44,7 +43,7 @@ const Accordian = () => {
                 }
               >
                 <h3 className=" ">{dataItem.question}</h3>
-                <span className="">+</span>
+                <span className="text-3xl">+</span>
               </div>
 
               {enableMultiSelection
