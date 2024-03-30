@@ -1,5 +1,5 @@
 import React, {  useState } from 'react'
-import {FaAd, FaStar} from 'react-icons/fa'
+import { FaStar} from 'react-icons/fa'
 import "./style.css"
 const StarRating = ({numberOfStats = 5}) => {
 
@@ -30,7 +30,7 @@ const StarRating = ({numberOfStats = 5}) => {
                 return(
                 <FaStar
                 key={index}
-                className={ index <= (hover || rating) ?'active' : 'inactive'}
+                className={ index <= (hover || rating) ? 'active' : 'inactive'}
                     
                     onClick={()=>handleClick(index)}
                     onMouseEnter={()=>handleMouseEnter(index)}
