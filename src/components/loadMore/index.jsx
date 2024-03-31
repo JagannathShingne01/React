@@ -12,7 +12,7 @@ const LoadMoreData = () => {
             setLoading(true)
             const response = await fetch(`https://dummyjson.com/products?limit=20&skip=${count === 0 ? 0 : count * 20}`)
             const result = await response.json()
-            console.log(result,"result")
+            // console.log(result,"result")
 
             if (result || result.products && result.products.length) {
                 setProducts((prevData)=> [...prevData, ...result.products]);
@@ -56,7 +56,7 @@ const LoadMoreData = () => {
         }
        </div>
        <div className=''>
-        <button disabled={disableButton} className='' onClick={()=> setCount(count + 1)}>Load More Products</button>
+        <button disabled={disableButton} className='bg-black text-white border-white p-2 rounded-lg' onClick={()=> setCount(count + 1)}>Load More Products</button>
        </div>
        {
         disableButton ? "You Have Reached to Limit 100 product" : null

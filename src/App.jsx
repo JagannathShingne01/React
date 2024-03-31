@@ -5,6 +5,7 @@ import Accordian from './components/accordian'
 import StarRating from './components/star-rating'
 import ImageSlider from './components/imageSlider'
 import LoadMoreData from './components/loadMore'
+import QRCode from './components/qr_genrater'
 function App() {
 
   return (
@@ -12,7 +13,8 @@ function App() {
     {/* <Accordian/>   */}
     {/* <StarRating/> */}
     {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={10}/> */}
-    <LoadMoreData/>
+    {/* <LoadMoreData/> */}
+    <QRCode />
     </>
 
   )
