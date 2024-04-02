@@ -7,6 +7,7 @@ import ImageSlider from './components/imageSlider'
 import LoadMoreData from './components/loadMore'
 import QRCode from './components/qr_genrater'
 import ThemeChanger from './components/themeChanger'
+import ScrollIndicator from './components/scroll_Indicator'
 function App() {
 
   return (
@@ -17,7 +18,8 @@ function App() {
     {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={10}/> */}
     {/* <LoadMoreData/> */}
     {/* <QRCode /> */}
-    <ThemeChanger/>
+    {/* <ThemeChanger/> */}
+    <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
     </>
 
 
