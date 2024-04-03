@@ -8,6 +8,8 @@ import LoadMoreData from './components/loadMore'
 import QRCode from './components/qr_genrater'
 import ThemeChanger from './components/themeChanger'
 import ScrollIndicator from './components/scroll_Indicator'
+import Tabs from './components/customTabs/tab-test'
+import TabTest from './components/customTabs/tabs'
 function App() {
 
   return (
@@ -19,7 +21,8 @@ function App() {
     {/* <LoadMoreData/> */}
     {/* <QRCode /> */}
     {/* <ThemeChanger/> */}
-    <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+    {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
+    <TabTest />
     </>
 
 

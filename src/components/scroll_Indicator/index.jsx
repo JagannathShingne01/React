@@ -57,9 +57,9 @@ const ScrollIndicator = ({ url }) => {
     <div>
       <div className="fixed top-0 z-1 w-[100%] h-14 text-center bg-black text-white text-2xl">
         <h1>Custom scroll indicator</h1>
-        <div className="w-[100%]  absolute top-14">
+        <div className="w-[100%]  absolute top-14 ">
           <div
-            className="h-6  bg-gray-400 w-[0%] "
+            className="h-6  bg-gray-400 w-[0%]"
             style={{ width: `${scrollPercentage}%` }}
           ></div>
         </div>
@@ -67,7 +67,7 @@ const ScrollIndicator = ({ url }) => {
 
       <div className="flex flex-col justify-center items-center">
         {data && data.length > 0
-          ? data.map((dataItem, idx) => <p key={idx}>{dataItem.title}</p>)
+          ? data.map((dataItem, idx) => <p className="p-2" key={idx}>{dataItem.title}</p>)
           : null}
       </div>
     </div>
