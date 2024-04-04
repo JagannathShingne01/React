@@ -10,6 +10,7 @@ import ThemeChanger from './components/themeChanger'
 import ScrollIndicator from './components/scroll_Indicator'
 import Tabs from './components/customTabs/tab-test'
 import TabTest from './components/customTabs/tabs'
+import ModelTest from './components/customModelPopUp/modalTest'
 function App() {
 
   return (
@@ -22,7 +23,8 @@ function App() {
     {/* <QRCode /> */}
     {/* <ThemeChanger/> */}
     {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
-    <TabTest />
+    {/* <TabTest /> */}
+    <ModelTest/>
     </>
 
 
