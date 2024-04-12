@@ -12,6 +12,7 @@ import Tabs from './components/customTabs/tab-test'
 import TabTest from './components/customTabs/tabs'
 import ModelTest from './components/customModelPopUp/modalTest'
 import GithubProfileFind from './components/githubProfileFinder'
+import Zerodha from './components/zerodha'
 function App() {
 
   return (
@@ -26,7 +27,8 @@ function App() {
     {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
     {/* <TabTest /> */}
     {/* <ModelTest/> */}
-    <GithubProfileFind/>
+    {/* <GithubProfileFind/> */}
+    <Zerodha/>
     </>
 
 
