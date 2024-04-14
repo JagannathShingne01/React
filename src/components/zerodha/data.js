@@ -1,23 +1,23 @@
  const links = [
     {
       name: "Home",
-      hash: "#home",
+      hash: "/home",
     },
     {
       name: "Projects",
-      hash: "#projects",
+      hash: "/projects",
     },
     {
       name: "Skills",
-      hash: "#skills",
+      hash: "/skills",
     },
     {
       name: "About",
-      hash: "#about",
+      hash: "/about",
     },
     {
       name: "Contact",
-      hash: "#contact",
+      hash: "/contact",
     },
   ] 
    export default links;

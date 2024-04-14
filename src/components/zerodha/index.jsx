@@ -1,5 +1,7 @@
 import React from "react";
 import links from "./data";
+import img from "../../assets/course.jpg"
+import { Link } from "react-router-dom";
 const Zerodha = () => {
   console.log(links);
   return (
@@ -8,14 +10,10 @@ const Zerodha = () => {
         <ul className="  text-white font-bold py-4 flex justify-between  mx-1 md:mx-20  ">
           <div>HI</div>
           <div className="flex justify-evenly gap-1 md:gap-8">
-            {links.map((link) => (
-              <>
-                <a href="https://zerodha.com/" className="text-lg" key={link}>
-                  {link.name}
-                </a>
-                {/* <div>Hi</div> */}
-              </>
-            ))}
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link> </li>
+            <li><Link to="/service">service</Link></li>
           </div>
         </ul>
       </div>
@@ -36,20 +34,20 @@ const Zerodha = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 h-72 m-10 mx-20">
-        <div className="bg-red-300">d</div>
-        <div className="bg-yellow-600">
+        <div className=""><img className="h-full" src={img} alt="" /></div>
+        <div className="">
           <h1 className="text-5xl my-3">Largest stock broker in India</h1>
           <p>
             1.3+ Crore Zerodha clients contribute to over 15% of all retail
             order volumes in India daily by trading and investing in:
           </p>
-          <div className="grid grid-cols-2 bg-yellow-300 ">
-            <h1>Futures and Options</h1>
-            <h1>Stocks & IPOs</h1>
-            <h1>Commodity derivatives</h1>
-            <h1>Direct mutual funds</h1>
-            <h1>Currency derivatives</h1>
-          </div>
+          <ul className="grid grid-cols-2  mt-6 gap-3 ">
+            <li>&#x2022;Futures and Options</li>
+            <li>&#x2022;Stocks & IPOs</li>
+            <li>&#x2022;Commodity derivatives</li>
+            <li>&#x2022;Direct mutual funds</li>
+            <li>&#x2022;Currency derivatives</li>
+          </ul>
         </div>
       </div>
     </>

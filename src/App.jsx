@@ -13,23 +13,34 @@ import TabTest from './components/customTabs/tabs'
 import ModelTest from './components/customModelPopUp/modalTest'
 import GithubProfileFind from './components/githubProfileFinder'
 import Zerodha from './components/zerodha'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import About from './components/zerodha/about'
 function App() {
 
   return (
     <>
-    <h1 className='flex justify-center h-[10vh] items-center text-2xl font-semibold'>LEARING REACT JS! </h1>
-    {/* <Accordian/>   */}
-    {/* <StarRating/> */}
-    {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={10}/> */}
-    {/* <LoadMoreData/> */}
-    {/* <QRCode /> */}
-    {/* <ThemeChanger/> */}
-    {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
-    {/* <TabTest /> */}
-    {/* <ModelTest/> */}
-    {/* <GithubProfileFind/> */}
-    <Zerodha/>
-    </>
+    
+      <h1 className='flex justify-center h-[10vh] items-center text-2xl font-semibold'>LEARING REACT JS! </h1>
+      {/* <Accordian/>   */}
+      {/* <StarRating/> */}
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={10}/> */}
+      {/* <LoadMoreData/> */}
+      {/* <QRCode /> */}
+      {/* <ThemeChanger/> */}
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
+      {/* <TabTest /> */}
+      {/* <ModelTest/> */}
+      {/* <GithubProfileFind/> */}
+      <BrowserRouter>
+        
+        <Routes>
+          <Route path="/" element={<Zerodha />}/>
+          <Route path="/about" element={<About />}/>
+        </Routes>
+      </BrowserRouter>
+     
+      </>
 
 
 
