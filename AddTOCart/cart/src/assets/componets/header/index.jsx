@@ -1,7 +1,11 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const dispatch = useDispatch()
+  const {cart} = useSelector(state=> state)
+ const noOfItem = cart.length
   return (
     <div>
       <nav className="flex justify-between items-center h-20 max-w-6xl mx-auto">
@@ -17,7 +21,7 @@ const Header = () => {
                 <li className="cursor-pointer list-none">Home</li>
             </Link>
             <Link to={"/cart"}>
-                <li className="cursor-pointer">Cart</li>
+                <li className="cursor-pointer">Cart <span>{noOfItem}</span></li>
             </Link>
         </ul>
       </nav>
