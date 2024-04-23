@@ -1,7 +1,9 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
+import TransactionForm from "../add-transaction";
+import TransactionChartSummary from "../chart";
 
-const Summary = () => {
+const Summary = ({onClose,isOpen}) => {
   return (
     <Box
       p={"6"}
@@ -44,11 +46,12 @@ const Summary = () => {
             borderColor={"gray.100"}
             justifyContent={"space-evenly"}
             alignItems={"center"}
-            bg={"black"}
+            bg={"gray.100"}
+            
           >
             <Flex flexDirection={"column"}>
               <Heading color={"gray.700"}>$700</Heading>
-              <Text color={"gray.600"}>Total Income </Text>
+              <Text color={"gray.700"}>Total Income </Text>
             </Flex>
           </Flex>
           <Flex
@@ -58,11 +61,12 @@ const Summary = () => {
             borderColor={"gray.100"}
             justifyContent={"space-evenly"}
             alignItems={"center"}
-            bg={"black"}
+            bg={"gray.100"}
+           
           >
             <Flex flexDirection={"column"}>
               <Heading color={"gray.700"}>$700</Heading>
-              <Text color={"gray.600"}>Total Expense </Text>
+              <Text color={"gray.700"}>Total Expense </Text>
             </Flex>
           </Flex>
         </Flex>
@@ -76,9 +80,10 @@ const Summary = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <Heading>Chart</Heading>
+          <Heading><TransactionChartSummary income={100} expense={1000}/></Heading>
         </Box>
       </Flex>
+      <TransactionForm onClose={onClose} isOpen={isOpen}/>
     </Box>
   );
 };
